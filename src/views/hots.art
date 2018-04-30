@@ -1,0 +1,13 @@
+{{each $data}}
+<li class="li-item">
+  <a href="javascript:void(0)">
+    <img data-original="{{$value.imgSrc}}" alt="" class="lazy">
+    <div class="rate">{{$value.rate}}</div>
+    <div class="desc">{{$value.desc}}</div>
+    <div>
+      <span class="name">{{$value.name}}</span>
+      <span class="price">{{$value.price}}</span>
+    </div>
+  </a>
+</li>
+{{/each}}

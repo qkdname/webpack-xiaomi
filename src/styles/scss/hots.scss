@@ -1,0 +1,28 @@
+.hots{
+  >.df{
+    height: 415px;
+  }
+  li{
+    width: 296px;
+    height: 415px;
+    background: #fff;
+    a{
+      display: block;
+      img{
+        display: block;
+        width: 100%;
+        height: 220px;
+      }
+      >div{
+        padding-left: 28px;
+      }
+      .rate{
+        width: 100%;
+        height: 116px;
+        padding: 22px 28px;
+        color: #333;
+      }
+      .name{padding-right: 10px;color: #333;border-right: 1px solid #b0b0b0}
+    }
+  }
+}

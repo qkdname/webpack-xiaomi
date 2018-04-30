@@ -1,0 +1,19 @@
+{{each $data}}
+<li>
+  <a href="javascript:void(0)">
+    <span>{{$value.name}}</span>
+    <i class="iconfont icon-qianjin"></i>
+  </a>
+  <div class="content">
+    <ul class="df sbt">
+      {{each $value.content as valu inde}}
+      <li>
+        <a href="javascript:void(0)">
+          <img src="{{valu.imgSrc}}" alt="">{{valu.name}}
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</li>
+{{/each}}

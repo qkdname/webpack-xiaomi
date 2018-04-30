@@ -1,0 +1,165 @@
+.hide {
+  display: none !important
+}
+
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sbt {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.alc {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+$mainColor:#ff6700;
+.hov-sha {
+  .product:hover,
+  .li-item:hover {
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    .rate {
+      bottom: 0;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+    }
+  }
+}
+
+.container {
+  width: 1226px;
+  margin-right: auto;
+  margin-left: auto
+}
+.logo {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: $mainColor url('../images/mi-logo.png') center center;
+  margin-right: 179px;
+}
+.price {
+  color: $mainColor;
+  font-size: 12px;
+  span {
+    color: #b0b0b0;
+    text-decoration: line-through;
+    margin-left: 10px;
+  }
+}
+
+.pic {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  margin-top: 20px;
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  >.all {
+    font-size: 16px;
+    &:hover {
+      color: $mainColor;
+      i {
+        background: $mainColor;
+      }
+    }
+    i {
+      margin-top: 19px;
+      margin-left: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: #fff;
+      background: #b0b0b0;
+    }
+  }
+  >span {
+    font-size: 22px;
+    font-weight: 200;
+  }
+}
+
+.product {
+  position: relative;
+  width: 234px;
+  line-height: 20px;
+  text-align: center;
+  text-align: center;
+  overflow: hidden;
+  a {
+    display: block;
+    text-align: center;
+    .name {
+      color: #333;
+      font-size: 14px;
+    }
+  }
+  .rate {
+    position: absolute;
+    left: 0;
+    bottom: -77px;
+    height: 77px;
+    padding: 8px 30px;
+    font-size: 12px;
+    text-align: left;
+    background: $mainColor;
+    .view {
+      color: #fff;
+    }
+    .from {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.desc {
+  font-size: 12px;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+}
+
+.banner {
+  display: block;
+  margin: 40px auto;
+  img {
+    display: block;
+    width: 100%;
+    height: 120px;
+  }
+}
+
+.main {
+  background: #f5f5f5;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .product {
+    background: #fff;
+  }
+}

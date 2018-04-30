@@ -1,0 +1,68 @@
+.flash {
+  >.df {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    >div,
+    a {
+      height: 340px;
+      border-top: 1px solid $mainColor;
+    }
+    >.time {
+      background: #f1eded;
+      text-align: center;
+      width: 234px;
+      >div,
+      >span,
+      >ul,
+      >img {
+        margin: 40px auto 0;
+      }
+      >div {
+        color: #ef3a3b;
+        font-size: 21px
+      }
+      >span {
+        display: block;
+        margin-top: 20px;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.54);
+      }
+      img {
+        width: 34px;
+        height: 53px;
+      }
+      .df {
+        font-size: 18px;
+        line-height: 46px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+        :nth-child(2n) {
+          width: 15px;
+        }
+        :nth-child(2n-1) {
+          background: #605751;
+          width: 46px;
+          height: 46px;
+          color: #fff;
+        }
+      }
+    }
+    .product {
+      background: rgba(0, 0, 0, 0.02);
+      .pic{
+        z-index: 9;
+        padding: 39px 0 25px;
+        img{
+          position: relative;
+          z-index: -1;
+          width: 160px;
+          height: 160px;
+        }
+      }
+      
+    }
+  }
+}

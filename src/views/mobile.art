@@ -1,0 +1,21 @@
+<div class=" left">
+  <a href="javascript:void(0)">
+    <img src="{{first}}" alt="">
+  </a>
+</div>
+<div class="right df sbt">
+{{each list as valu inde}}
+<a href="javascript:void(0)" class="product">
+  <div class="pic">
+    <img data-original="{{valu.imgSrc}}" alt="" class="lazy">
+  </div>
+  <div class="name">{{valu.name}}</div>
+  <div class="desc">{{valu.desc}}</div>
+  <div class="price">{{valu.price}} {{if valu.old}}
+    <span class="old">{{valu.old}}</span>
+    {{/if}}
+  </div>
+</a>
+{{/each}}
+</div>
+

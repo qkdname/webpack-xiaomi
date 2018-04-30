@@ -1,0 +1,58 @@
+.category-slide{
+
+  .slideBox {
+    position: relative;
+    z-index: 1;
+    >a {
+      position: absolute;
+      top: 50%;
+      z-index: 999;
+      width: 41px;
+      height: 69px;
+      margin-top: -35px;
+      text-indent: -9999px;
+      overflow: hidden;
+    }
+    >.prev {
+      left: 234px;
+      background: url(//i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png) no-repeat -84px 50%;
+    }
+    >.prev:hover {
+      background-position: 0 50%;
+    }
+    >.next {
+      right: 0;
+      background: url(//i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png) no-repeat -125px 50%;
+    }
+    >.next:hover {
+      background-position: -42px 50%;
+    }
+    .bd {
+      position: relative;
+      li {
+        a,
+        img {
+          display: block;
+          height: 460px;
+        }
+      }
+    }
+    .hd {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      li {
+        float: left;
+        border: 2px solid #fff;
+        border-color: rgba(255, 255, 255, 0.3);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+      li.on {
+        background: #fff;
+      }
+    }
+  }
+}

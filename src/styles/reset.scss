@@ -1,0 +1,45 @@
+body,
+ul,
+dl,
+dd,
+dt,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+nav ul,
+nav ol,
+li {
+  list-style: none;
+  list-style-image: none
+}
+
+input,
+button {
+  border: none;
+  background: #fff;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+body {
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
+  
+}
+
+a {
+  color: #757575;
+  text-decoration: none
+}
+
+
+
+

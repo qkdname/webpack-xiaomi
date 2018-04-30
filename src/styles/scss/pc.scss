@@ -1,0 +1,66 @@
+.pc{
+  height: 672px;
+  .title{
+    
+    >ul{
+      position: relative;
+      >li{
+        >span{
+          display: inline-block;
+          margin-top: 19px;
+          height: 25px;
+          margin-left: 20px;
+          font-size: 16px;
+          cursor: pointer;
+          font-weight: normal;
+        }
+        .list{
+          
+          position: absolute;
+          width: 0;
+          overflow: hidden;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          top: 58px;
+          right: 0;
+          .product{
+            height: 300px;
+            background: #fff;
+            .pic{
+              margin-top: 30px;
+              margin-bottom: 20px;
+            }
+            img{
+              width: 150px;
+              height: 150px;
+            }
+          }
+          .product:nth-child(n+5){
+            margin-top: 14px;
+          }
+        }
+      }
+      >li.active{
+        
+        >span{
+          color: $mainColor;
+          border-bottom: 1px solid $mainColor;
+        }
+        >.list{
+          width: 978px;
+        }
+      }
+    }
+  }
+  >a{
+    display: block;
+    img{
+      display: block;
+      width: 234px;
+      height: 300px;
+    }
+    &:nth-of-type(1){
+      margin-bottom: 14px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+footer{
+  padding-top: 20px;
+  background: #fafafa;
+  a:hover{
+    color: $mainColor !important;
+  }
+  .container{
+    font-size: 12px;
+    .left{
+      // width: 670px;
+      height: 55px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          .logo{margin: 0;}
+          .text{
+            li {
+              a {
+                padding: 0 5px;
+                border-left: 1px solid #b0b0b0;
+                line-height: 1;
+              }
+              &:nth-child(1) {
+                a {
+                  border: none;
+                }
+              }
+            }
+            .md,.bot{
+              padding-left: 5px;
+              color: #b0b0b0;
+              a{
+                color: #b0b0b0;
+              }
+            }
+          }
+    }
+    >ul{
+      a,img{
+        display: block;width: 85px;
+        height: 28px;
+      }
+    }
+  }
+  >.slogan{
+    padding: 30px 0;
+    background: url('https://s01.mifile.cn/i/slogan2016.png') no-repeat center center;
+  }
+}

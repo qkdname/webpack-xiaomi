@@ -1,0 +1,8 @@
+{{each $data}}
+<li class="li-item">
+  <div class="play iconfont icon-bofang"></div>
+  <img src="{{$value.imgSrc}}" alt="">
+  <div class="name">{{$value.name}}</div>
+  <div class="desc">{{$value.desc}}</div>
+</li>
+{{/each}}

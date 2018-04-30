@@ -1,0 +1,95 @@
+#content{
+  >.df{
+    >li{
+      position: relative;
+      width: 296px;
+      height: 420px;
+      background: #fff;
+      text-align: center;
+      &:hover{
+        .prev,.next{
+          display: block;
+        }
+      }
+      >.name{
+        font-size: 16px;
+        padding: 45px 0 25px;
+        color: #ffac13;
+      }
+      .bd li{
+        
+        a{
+          display: block;
+          text-align: center;
+          >.book-name{
+            
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 8px;
+          }
+          .desc{
+            padding: 0 48px;
+          }
+          .money{
+            color: #333;
+            margin: 8px 0 15px;
+          }
+          img{
+            width: 216px;
+            height: 154px;
+          }
+        }
+      }
+      .prev,.next{
+        display: none;
+        position: absolute;
+        width: 20px;
+        height: 48px;
+        line-height: 48px;
+        top: 50%;
+        margin-top: -24px;
+        color: #fff;
+        background: rgba(66, 66, 66, 0.2);
+        &:hover{
+          background: #b0b0b0;
+        }
+      }
+      .prev{
+        left: 0;
+        
+      }
+      .next{
+        right: 0;
+        font-size: 18px;
+      }
+      .hd{
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        ul{
+          width: 296px;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          
+          li{
+            margin: 0 16px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #b0b0b0;
+          }
+          li.on{
+            width: 8px;
+            height: 8px;
+            border: 2px solid $mainColor;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+nav>.container{
+  padding-top: 20px;
+  position: relative;
+  
+  .left>ul{
+    >li{
+      .name{
+        height: 75px;
+        line-height: 55px;
+        cursor: pointer;
+        padding-right: 16px;
+      }
+      >ul{
+        position: absolute;
+        height: 0;
+        overflow: hidden;
+        top: 95px;
+        left: 0;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        li{
+          width: 204px;
+          height: 201px;
+          line-height: 20px;
+          text-align: center;
+          .flag{
+            height: 20px;
+          }
+          a{
+            display: block;
+            .pic{
+              margin: 16px 0 16px;
+            }
+          }
+        }
+        li:nth-child(n+2){
+          .pic{
+            border-left: 1px solid #e0e0e0;
+          }
+        }
+      }
+    }
+    >li:hover{
+      .name{
+        color: $mainColor;
+      }
+      >ul{
+        height: 221px;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+      }
+    }
+  }
+  
+  .search{
+    border: 1px solid #e0e0e0;
+    height: 50px;
+  }
+  input{
+    
+    width: 245px;
+    font-size: 14px;
+    
+    padding-left: 14px;
+  }
+  button{width: 50px;height: 48px;border-left: 1px solid #e0e0e0;}
+}
+nav.border{
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 221px;
+}

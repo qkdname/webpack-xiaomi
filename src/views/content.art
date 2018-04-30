@@ -1,0 +1,35 @@
+{{each $data}}
+<li class="li-item">
+  <div class="name">{{$value.name}}</div>
+  <div class="slideBox">
+    <div class="hd">
+      <ul class="df">
+        {{each $value.list}}
+        <li></li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="bd">
+      <ul>
+        {{each $value.list as valu inde}}
+        <li>
+          <a href="javascript:void(0)">
+            {{if valu.name}}
+            <div class="book-name">{{valu.name}}</div>
+            {{/if}}
+            <div class="desc">{{valu.desc}}</div>
+            <div class="money">{{valu.money}}</div>
+            <div class="pic">
+              <img src="{{valu.imgSrc}}" alt="">
+            </div>
+
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <a href="javascript:void(0)" class="prev iconfont icon-houtui"></a>
+    <a href="javascript:void(0)" class="next iconfont icon-qianjin"></a>
+  </div>
+</li>
+{{/each}}

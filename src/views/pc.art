@@ -1,0 +1,23 @@
+{{each $data}}
+<li>
+  <span>{{$value.name}}</span>
+  <ul class="list df sbt">
+    {{each $value.list as valu inde}}
+    <li class="product">
+      <a href="javascript:void(0)">
+        <div class="pic">
+          <img src="{{valu.imgSrc}}" alt="">
+        </div>
+        <div class="name">{{valu.name | limitStr}}</div>
+        <div class="desc">{{valu.desc | limitStr}}</div>
+        <div class="price">{{valu.price}}<span>{{valu.old}}</span></div>
+        <div class="rate">
+          <div class="view">物流非常快，送到了并检查。电视外壳做工一般。 我和我...</div>
+          <div class="from">来自小米用户的评价</div>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</li>
+{{/each}}

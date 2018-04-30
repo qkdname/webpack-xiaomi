@@ -1,0 +1,19 @@
+{{each $data}}
+<li>
+  <div class="name">{{$value.name}}</div>
+  <ul class="df">
+    {{each $value.list as valu inde}}
+    <li>
+      <div class="flag"></div>
+      <a href="javascript:void(0)">
+        <div class="pic">
+          <img src="{{valu.imgSrc}}" alt="" width="160" height="110">
+        </div>
+        <div class="item-name">{{valu.name}}</div>
+      </a>
+      <div class="price">{{valu.price}}元</div>
+    </li>
+    {{/each}}
+  </ul>
+</li>
+{{/each}}
